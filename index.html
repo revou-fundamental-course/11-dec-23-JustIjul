@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan yaa</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!--Header Start-->
+
+    <header>
+      <a href="https://smasa-magetan.sch.id/"
+        ><img src="assets/logo-smasa.png" alt="Logo Smasa"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="#homepage">Home</a></li>
+          <li><a href="#vision-mission">Vision & Mission</a></li>
+          <li><a href="#our-facilitation">Our Facilitation</a></li>
+          <li><a href="#message-us">Message us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Header End-->
+
+    <!--Home Page Start-->
+
+    <div id="homepage">
+      <div id="homepage-text">
+        <h1>Hi <span id="nama-user"></span>, Welcome To Our Website!</h1>
+        <p>
+          Our school is one of the best schools in the world, so why not see
+          some things about our school?
+        </p>
+      </div>
+    </div>
+
+    <!--Home Page End-->
+
+    <!--Vision & Mission Start-->
+
+    <div id="vision-mission">
+      <h1>Vision <span>&</span> Mission</h1>
+      <div id="vision">
+        <h2>Vision</h2>
+        <p>
+          The creation of school personnel who are faithful and pious,
+          innovative, with character through learning communities to increase
+          global competitiveness.
+        </p>
+      </div>
+      <div id="mission">
+        <h2>Mission</h2>
+        <ol type="1">
+          <li>
+            1. Cultivate a school life that is religious and has noble character
+            in accordance with their respective religions and beliefs.
+          </li>
+          <li>
+            2. Exploring the potential of human resources and developing them in
+            accordance with technological developments.
+          </li>
+          <li>3. Improving discipline for school residents.</li>
+          <li>
+            4. Creating a superior and competitive school in the academic and
+            non-academic fields.
+          </li>
+          <li>
+            5. Realizing education that prioritizes lifelong learning by
+            involving all school members and parents of students.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!--Vision & Mission End-->
+
+    <!--Our Facilitation Start-->
+
+    <div id="our-facilitation">
+      <h1>Our <span>Facilitation</span></h1>
+      <div id="our-facilitation-img">
+        <div id="school-canteen">
+          <div id="school-canteen-img"></div>
+          <p>School Canteen</p>
+        </div>
+        <div id="school-field">
+          <div id="school-field-img"></div>
+          <p>School Field</p>
+        </div>
+        <div id="school-library">
+          <div id="school-library-img"></div>
+          <p>School Library</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Our Facilitation End-->
+
+    <!--Message Us Start-->
+    <div id="message-us">
+      <h1>Message <span>Us</span></h1>
+      <div id="message-us-form">
+        <div id="message-form">
+          <form
+            class="input-box"
+            name="message-form"
+            onsubmit="return validateForm()"
+          >
+            Nama:
+            <input type="text" placeholder="Nama Anda" name="nama" />
+            <br />
+
+            Tanggal Lahir:
+            <input type="date" name="tanggal-lahir" />
+            <br />
+            <br />
+            Jenis Kelamin:
+            <div id="gender">
+              <input
+                type="radio"
+                name="jenis-kelamin"
+                id="laki-laki"
+                value="Laki-laki"
+              />
+              <label for="laki-laki">Laki-laki</label>
+              <input
+                type="radio"
+                name="jenis-kelamin"
+                id="perempuan"
+                value="Perempuan"
+              />
+              <label for="perempuan">Perempuan</label>
+            </div>
+            <br />
+            <br />
+            Pesan:
+            <textarea name="pesan" placeholder="Pesan anda"></textarea>
+            <br />
+            <br />
+            <input type="submit" value="Kirim" />
+          </form>
+        </div>
+        <div id="sender">
+          <p>Nama: <span id="sender-nama"></span></p>
+          <p>Tanggal Lahir: <span id="sender-tanggal-lahir"></span></p>
+          <p>Jenis Kelamin: <span id="sender-jenis-kelamin"></span></p>
+          <p>Pesan: <span id="sender-pesan"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!--Message Us End-->
+
+    <!--Footer Start-->
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#homepage">Home</a>
+        <a href="#vision-mission">Vision & Mission</a>
+        <a href="#our-facilitation">Our Facilitation</a>
+        <a href="#message-us">Message us</a>
+      </div>
+
+      <div class="credit">
+        <p>Dibuat oleh <a href="">YuliusRestu</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+
+    <!--Footer End-->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
